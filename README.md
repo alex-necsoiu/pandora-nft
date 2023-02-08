@@ -1,7 +1,7 @@
 # pandora-nft
 Pandora Labs NFT's with whitelist and airdrop presale
 
-# Create Unlockd NFT Collection
+# Create Pandora NFT Collection
 
 NOTE: smart contract will be verified on etherscan when you run deploy script
 

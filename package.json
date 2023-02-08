@@ -1,0 +1,15 @@
+{
+    "name": "pandora-nf",
+    "dependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+        "@nomiclabs/hardhat-etherscan": "^3.1.5",
+        "@openzeppelin/contracts": "^4.8.1",
+        "@openzeppelin/contracts-upgradeable": "^4.8.1",
+        "@openzeppelin/hardhat-upgrades": "^1.22.1",
+        "dotenv": "^16.0.3"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.2.2",
+        "ethers": "^5.7.2"
+    }
+}
