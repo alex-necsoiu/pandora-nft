@@ -1,5 +1,6 @@
 # PandoraNFT
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 This repository contains the code for the PandoraNFT smart contract. The smart contract is a Non-Fungible Token (NFT) that is used to represent unique assets within the Pandora ecosystem. A smart contract for creating and managing NFTs on the Ethereum blockchain. 
 
 ## Table of Contents
@@ -98,4 +99,5 @@ We welcome contributions in the form of bug reports, feature requests, or pull r
 
 ## License
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
 This project is licensed under the MIT License - see the LICENSE file for details.
