@@ -1,7 +1,9 @@
 # PandoraNFT
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
 
-This repository contains the code for the PandoraNFT smart contract. The smart contract is a Non-Fungible Token (NFT) that is used to represent unique assets within the Pandora ecosystem. A smart contract for creating and managing NFTs on the Ethereum blockchain. 
+
+This repository contains the code for the PandoraNFT smart contract. The smart contract is an ERC-721 standard Non-Fungible Token (NFT) that is used to represent unique assets within the Pandora ecosystem.  This smart contract has been built with security and decentralization in mind and allows users to mint, transfer and manage their collectible items securely.
 
 ## Table of Contents
 - [PandoraNFT](#pandoranft)
