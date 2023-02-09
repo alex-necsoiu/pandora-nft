@@ -1,7 +1,6 @@
 # PandoraNFT
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![Solidity Version](https://img.shields.io/badge/solidity-0.8.17-blueviolet)](https://solidity.readthedocs.io/en/v0.8.17/)
-[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
+[![Solidity Version](https://img.shields.io/badge/solidity-0.8.17-blueviolet)](https://solidity.readthedocs.io/en/v0.8.17/) 
 [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
 
