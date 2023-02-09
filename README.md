@@ -1,5 +1,5 @@
 # PandoraNFT
-
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 This repository contains the code for the PandoraNFT smart contract. The smart contract is a Non-Fungible Token (NFT) that is used to represent unique assets within the Pandora ecosystem. A smart contract for creating and managing NFTs on the Ethereum blockchain. 
 
 ## Table of Contents
@@ -16,7 +16,7 @@ This repository contains the code for the PandoraNFT smart contract. The smart c
   - [Test](#test)
   - [Usage](#usage)
   - [Verified Smart Contract](#verified-smart-contract)
-    - [Goerli:](#goerli)
+  - [Contributing](#contributing)
   - [License](#license)
 
 ## Introduction
@@ -69,6 +69,8 @@ npx hardhat compile
 
 ## Deploying to a Network
 
+To deploy the contract to a network such as Ethereum mainnet, modify the deployment script (scripts/deploy.js) and run the following command:
+
 ```shell
 npx hardhat run scripts/deploy.js --network <network-name>
 ```
@@ -85,9 +87,15 @@ To interact with the PandoraNFT smart contract, you can use a variety of tools i
 
 ## Verified Smart Contract
 
-### Goerli:
+Goerli:
 ```shell
 https://goerli.etherscan.io/address/
 ```
+
+## Contributing
+
+We welcome contributions in the form of bug reports, feature requests, or pull requests. For more information, please see CONTRIBUTING.md.
+
 ## License
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 This project is licensed under the MIT License - see the LICENSE file for details.
