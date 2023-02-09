@@ -19,18 +19,17 @@ contract pandoraNFT is
     string public contractURI;
 
     // Flags to activate or desactivate different stages of minting 
-    bool public teamMintActive = false; // Only private Whitelist
-    bool public airdropMintActive = false; // Minted only by the contract Owner
-    bool public whitelistMintActive = false; // Only preregistred whitelist
-    bool public pubMintActive = false; // Open to public sale 
-
+    bool public teamMintActive; // Only private Whitelist
+    bool public airdropMintActive; // Minted only by the contract Owner
+    bool public whitelistMintActive; // Only preregistred whitelist
+    bool public pubMintActive; // Open to public sale 
 
     // Whitelists 
     mapping(address=> uint32) public whitelist;
     mapping(address => uint32) public teamWhitelist;
 
     // Total supply
-	uint32 public constant MAX_SUPPLY = 10;
+	uint32 public constant MAX_SUPPLY = 100;
 
     // Public Team Minting price
     uint64 private constant TEAM_MINT_PRICE = 0.001 ether;
@@ -56,16 +55,12 @@ contract pandoraNFT is
         bool pubMintActive
         );
 
-    address constant public myAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
     // Initialize the contract
-    function initalize (
-        string memory name,
-        string memory symbol,
+    function initialize(
         address _newOwner,  
         address _treasury
-
     ) public initializer {
-        __ERC721_init(name, symbol);
+        __ERC721_init("The Pandora", "PANDORA");
         __Ownable_init();
         __UUPSUpgradeable_init();
         treasury=_treasury;
@@ -74,9 +69,9 @@ contract pandoraNFT is
     }
 
     // Initializes the contract by setting a `name` and a `symbol`
-    constructor(){
-        initalize("The Panter", "PANTER", myAddress,myAddress);
-    }
+    // constructor(){
+    //     initalize("The Panter", "PANTER", myAddress,myAddress);
+    // }
 
     // Mint Function
     function mint(address _to, uint32 _quantity) private {
@@ -163,5 +158,4 @@ contract pandoraNFT is
     } 
 
     function _authorizeUpgrade(address) internal override onlyOwner {}
-
 }

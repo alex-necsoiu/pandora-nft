@@ -7,7 +7,7 @@ typechain
 #Hardhat files
 cache
 artifacts
-
+.openzeppelin
 node_modules
 .env
 coverage
