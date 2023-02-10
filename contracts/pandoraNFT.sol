@@ -29,7 +29,7 @@ contract pandoraNFT is
     mapping(address => uint32) public teamWhitelist;
 
     // Total supply
-	uint32 public constant MAX_SUPPLY = 100;
+	uint32 public constant MAX_SUPPLY = 1000;
 
     // Public Team Minting price
     uint64 private constant TEAM_MINT_PRICE = 0.001 ether;
@@ -67,11 +67,6 @@ contract pandoraNFT is
         transferOwnership(_newOwner);
         supply.increment();
     }
-
-    // Initializes the contract by setting a `name` and a `symbol`
-    // constructor(){
-    //     initalize("The Panter", "PANTER", myAddress,myAddress);
-    // }
 
     // Mint Function
     function mint(address _to, uint32 _quantity) private {
@@ -158,4 +153,9 @@ contract pandoraNFT is
     } 
 
     function _authorizeUpgrade(address) internal override onlyOwner {}
+
+    function transferToTreasury() external nonReentrant onlyOwner {
+        (bool sent, ) = treasury.call{value: address(this).balance}("");
+        require(sent, "failed to send eth to treasury");
+    }
 }
