@@ -17,6 +17,7 @@ contract pandoraNFT is
     string private baseURi;
 
     string public contractURI;
+    string private baseURI;
 
     // Flags to activate or desactivate different stages of minting 
     bool public teamMintActive; // Only private Whitelist
@@ -81,7 +82,7 @@ contract pandoraNFT is
         }
     }
 
-    // Team Mint first 50 rare NFT's of the colection
+    // Team Mint first 20 rare NFT's of the colection
     function teamNFTMint(address _to, uint32 _quantity) external payable nonReentrant{
         require(_quantity > 0,"Invalid mint quantity");
         require(teamMintActive, "Team Mint not started");
@@ -157,5 +158,14 @@ contract pandoraNFT is
     function transferToTreasury() external nonReentrant onlyOwner {
         (bool sent, ) = treasury.call{value: address(this).balance}("");
         require(sent, "failed to send eth to treasury");
+    }
+
+    // Set url for nft file
+    function setBaseURI(string memory uri) external onlyOwner {
+        baseURI = uri;
+    }
+    // Returns _baseURI 
+    function _baseURI() internal view override returns (string memory) {
+        return baseURI;
     }
 }
