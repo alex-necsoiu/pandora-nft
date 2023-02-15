@@ -1,9 +1,7 @@
 const { ethers, upgrades } = require("hardhat");
 const { keccak256 } = ethers.utils;
 
-// const padBuffer = (addr) => {
-//   return Buffer.from(addr.substr(2).padStart(32 * 2, 0), "hex");
-// };
+
 const ENVIRONMENT = process.env.ENVIRONMENT;
 // const admin = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
 // const treasury = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
@@ -73,7 +71,7 @@ async function main() {
   console.log("Set team whitelist!");
 
   await contract.setBaseURI(
-    "https://ipfs.io/ipfs/bafybeibu7rgw7zsutgptaxorty7rfheeelawc7qpywjiw4basm7b377llq/"
+    "https://ipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/"
   );
 
   const implAddress = await upgrades.erc1967.getImplementationAddress(

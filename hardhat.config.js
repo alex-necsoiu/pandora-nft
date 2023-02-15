@@ -2,6 +2,7 @@ require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 require("@openzeppelin/hardhat-upgrades");
 require("@nomicfoundation/hardhat-toolbox");
+require('hardhat-docgen');
 require("dotenv").config();
 
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL;
@@ -57,4 +58,9 @@ module.exports = {
       mainnet: ETHERSCAN_API,
     },
   },
+  docgen: {
+    path: './docs',
+    clear: true,
+    runOnCompile: true,
+  }
 };
