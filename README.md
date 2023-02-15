@@ -93,7 +93,7 @@ To interact with the PandoraNFT smart contract, you can use a variety of tools i
 
 Goerli:
 ```shell
-https://goerli.etherscan.io/address/
+https://goerli.etherscan.io/address/0xC78592BFd1b057d77A7AeFBEe15A0281257E160c#code
 ```
 
 ## 👥 Contributing
